@@ -109,3 +109,57 @@ button:hover {
     font-style: italic;
     margin-top: 10px;
 }
+
+/* BARRE DE NAVIGATION */
+.main-nav {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo à gauche */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.2em;
+}
+
+.logo-small {
+    width: 40px;
+    height: 40px;
+}
+
+/* Barre de recherche qui prend tout l'espace restant */
+.nav-search {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 40px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #0078ff;
+    box-shadow: 0 0 10px rgba(0,120,255,0.2);
+}
