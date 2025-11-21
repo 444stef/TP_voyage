@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="UTF-8">
+    <title>PerduDansLeMonde - Réservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Réservation</h1>
+        <p>Complétez vos informations de voyage</p>
+    </header>
+
+    <form action="panier.html" method="get">
+        <fieldset>
+            <legend>Dates</legend>
+            <label>
+                Date de départ *
+                <input type="date" name="date-depart" id="date-depart" required>
+            </label>
+            <label>
+                Date de retour *
+                <input type="date" name="date-retour" id="date-retour" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Participants</legend>
+            <label>
+                Adultes *
+                <input type="number" name="adultes" min="1" value="1" required>
+            </label>
+            <label>
+                Enfants (-12 ans) *
+                <input type="number" name="enfants" min="0" value="0" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Options</legend>
+            <label>
+                <input type="checkbox" name="petit-dej" value="oui">
+                Petit-déjeuner ?
+            </label>
+        </fieldset>
+
+        <button type="submit">Ajouter au panier</button>
+    </form>
+    
+    <p class="note">* champs obligatoires</p>
+</body>
+</html>
