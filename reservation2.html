@@ -19,7 +19,6 @@
 
     <fieldset>
         <legend>Dates</legend>
-
         <label>
             Date de départ *
             <input type="date" name="date-depart" id="date-depart" required>
@@ -30,6 +29,7 @@
             Date de retour *
             <input type="date" name="date-retour" id="date-retour" required>
         </label>
+        
     </fieldset>
 
     <br>
@@ -47,6 +47,8 @@
             Enfants (-12 ans) *
             <input type="number" name="enfants" min="0" value="0" required>
         </label>
+
+        
     </fieldset>
 
     <br>
@@ -58,13 +60,19 @@
 
     <br><br>
 
+    <p id="erreur" style="color:red; font-weight:bold;"></p>
+
     <button type="submit">Ajouter au panier</button>
+
+    <p><strong>Prix total :</strong> <span id="prix-total">0 €</span></p>
 
 </form>
 
 <p class="note">* champs obligatoires</p>
 
+
 </main>
+<script src="reservation.js"></script>
 
 <!-- CORRECTION : "reservation.js" au lieu de "Reservation.js" -->
 <script src="reservation2.js"></script>
