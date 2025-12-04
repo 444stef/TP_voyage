@@ -1,0 +1,46 @@
+
+const headerHTML = `
+<header class="main-header">
+    <!-- BANNIÈRE -->
+    <div class="banner-container">
+        <img src="banniereagence.png" alt="Bannière voyages" class="banner-image">
+        <div class="banner-overlay">
+            <h1 class="banner-title">MUST'N TRAVEL</h1>
+            <p class="banner-subtitle">Explorez, rêvez, découvrez !</p>
+        </div>
+    </div>
+
+    <!-- TEXTE SOUS BANNIÈRE -->
+    <div class="header-text">
+        <h2>Nos propositions de voyage</h2>
+        <p>Découvrez le voyage de votre vie</p>
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="main-nav">
+    <div class="nav-container">
+        <!-- Logo à gauche -->
+        <div class="nav-logo">
+            <span>Must'N Travel</span>
+        </div>
+
+        <!-- Barre de recherche au centre -->
+        <div class="nav-search">
+            <input type="text" placeholder="Rechercher une destination..." class="search-bar">
+        </div>
+
+        <!-- Bouton à droite -->
+        <div class="nav-boutons">
+            <button class="btn-connecter">Se connecter</button>
+        </div>
+    </div>
+</nav>
+`;
+
+// Ajouter le header
+document.addEventListener('DOMContentLoaded', function() {
+    const headerContainer = document.createElement('div');
+    headerContainer.innerHTML = headerHTML;
+    document.body.prepend(headerContainer);
+});
