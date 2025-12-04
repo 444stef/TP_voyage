@@ -1,132 +1,94 @@
-<!-- page principale -->
 <!DOCTYPE html>
 <html lang="fr">
 <head> 
     <meta charset="UTF-8">
-    <title>PerduDansLeMonde - Agence de voyage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Must'N Travel - Agence de voyage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="main-header">
-
-        <!-- Logo -->
-        <div class="logo-container">
-            <img src="must.png" alt="Logo PerduDansLeMonde" class="logo">
-        </div>
-
-        <!-- Bannière -->
-        <div class="banner-container">
-            <img src="banniere.jpg" alt="Bannière PerduDansLeMonde" class="banner">
-        </div>
-
-        <div class="header-text">
-            <h1>Nos propositions de voyage</h1>
-            <p>Découvrez le voyage de votre vie </p>
-        </div>
-    </header>
-
-    <!-- Barre de nagivation-->
-
-    <nav class ='main-nav'>
-        <div class ="nav-container">
-            <div class="nav-logo">
-                <imag src="logo.png" alt="Logo" class="logo_small">
-                    <span>PerduDansLeMonde</span>
-            </div>
-
-            <!-- au centre -->
-             <div class="nav-search">
-                <input type="text" placeholder=" Rechercher une destination..." class="search-bar">
-                </div>
-             </div>
-
-        </div>
-    </nav>
-
+    
     <!-- DESTINATIONS -->
-    <section class="destinations">
+    <main class="container">
+        <section class="destinations">
+            <!-- 1. Tokyo -->
+            <article>
+                <a href="reservation.html?id=1">
+                    <img src="tokyo.avif" alt="Tokyo">
+                </a>
+                <h3>Tokyo</h3>
+                <p>Go manger des sushis kawaiiii</p>
+            </article>
 
-        <!-- 1. Tokyo -->
-        <article>
-            <h3>Tokyo</h3>
-            <p>Go manger des sushis kawaiiii </p>
-            <a href="reservation.html?id=1">
-                <img src="tokyo.avif" alt="Mont Fuji">
-            </a>
-        </article>
+            <!-- 2. New York -->
+            <article>
+                <a href="reservation.html?id=2">
+                    <img src="newyork.jpg" alt="New York">
+                </a>
+                <h3>New York</h3>
+                <p>Une visite guidée incroyable au cœur de NYC</p>
+            </article>
 
-        <!-- 2. New York -->
-        <article>
-            <h3>New York</h3>
-            <p>Une visite guidée incroyable au cœur de NYC </p>
-            <a href="reservation.html?id=2">
-                <img src="newyork.jpg" alt="NYC">
-            </a>
-        </article>
+            <!-- 3. Égypte -->
+            <article>
+                <a href="reservation.html?id=3">
+                    <img src="egypt.jpg" alt="Égypte">
+                </a>
+                <h3>Égypte</h3>
+                <p>Explore les pyramides maudites</p>
+            </article>
 
-        <!-- 3. Égypte -->
-        <article>
-            <h3>Égypte</h3>
-            <p>Explore les pyramides maudites </p>
-            <a href="reservation.html?id=3">
-                <img src="egypte.jpg" alt="Pyramides">
-            </a>
-        </article>
+            <!-- 4. Islande -->
+            <article>
+                <a href="reservation.html?id=4">
+                    <img src="iceland.avif" alt="Islande">
+                </a>
+                <h3>Islande</h3>
+                <p>Paysages glacés et aurores boréales</p>
+            </article>
 
-        <!-- 4. Islande -->
-        <article>
-            <h3>Islande</h3>
-            <p>Paysages glacés et aurores boréales </p>
-            <a href="reservation.html?id=4">
-                <img src="iceland.avif" alt="Islande">
-            </a>
-        </article>
+            <!-- 5. Italie -->
+            <article>
+                <a href="reservation.html?id=5">
+                    <img src="rome.jpg" alt="Italie">
+                </a>
+                <h3>Italie</h3>
+                <p>Pâtes + pizza = bonheur maximum</p>
+            </article>
 
-        <!-- 5. Italie -->
-        <article>
-            <h3>Italie</h3>
-            <p>Pâtes + pizza = bonheur maximum </p>
-            <a href="reservation.html?id=5">
-                <img src="rome.jpg" alt="Italie">
-            </a>
-        </article>
+            <!-- 6. Hawaii -->
+            <article>
+                <a href="reservation.html?id=6">
+                    <img src="hawaii.jpg" alt="Hawaii">
+                </a>
+                <h3>Hawaii</h3>
+                <p>Plages paradisiaques</p>
+            </article>
 
-        <!-- 6. Hawaii -->
-        <article>
-            <h3>Hawaii</h3>
-            <p>Plages paradisiaques et vagues mythiques </p>
-            <a href="reservation.html?id=6">
-                <img src="hawaii.jpg" alt="Hawaii">
-            </a>
-        </article>
+            <!-- 7. Rio -->
+            <article>
+                <a href="reservation.html?id=7">
+                    <img src="rio.avif" alt="Rio">
+                </a>
+                <h3>Rio de Janeiro</h3>
+                <p>Samba</p>
+            </article>
 
-        <!-- 7. Rio -->
-        <article>
-            <h3>Rio de Janeiro</h3>
-            <p>Ambiance tropicale et paysages iconiques </p>
-            <a href="reservation.html?id=7">
-                <img src="rio.avif" alt="Rio">
-            </a>
-        </article>
+            <!-- 8. Canada -->
+            <article>
+                <a href="reservation.html?id=8">
+                    <img src="canada.jpg" alt="Canada">
+                </a>
+                <h3>Canada</h3>
+                <p>Nature sauvage et paysages grandioses</p>
+            </article>
+        </section>
+    </main>
 
-        <!-- 8. Okinawa -->
-        <article>
-            <h3>Okinawa</h3>
-            <p>Détente et culture japonaise authentique 🇯🇵</p>
-            <a href="reservation.html?id=8">
-                <img src="okinawa.jpg" alt="Okinawa">
-            </a>
-        </article>
 
-    </section>
-
-    <!-- Lien vers À propos & Contact -->
-    <footer style="text-align:center; padding:20px; background:#f2f2f2; margin-top:40px;">
-        <p>En savoir plus : <a href="a_propos.html">À propos & Contact</a></p>
-    </footer>
-
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
 </body>
 </html>
